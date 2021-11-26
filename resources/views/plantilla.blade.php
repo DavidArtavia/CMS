@@ -12,7 +12,7 @@
 
 </head>
 <body>
-    HOLA SOY PLANTILLA 
+    HOLA SOY PLANTILLA de cas
 
 </body>
 </html>
