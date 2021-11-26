@@ -7,7 +7,7 @@
     <title>MY Blog | CMS</title>
     
    {{--  PLUGINS DE CSS --}}
-   
+   {{-- Procedo a agregar los cambios --}}
 
 
 </head>
