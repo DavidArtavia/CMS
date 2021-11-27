@@ -16,6 +16,7 @@ class CreatePruebosTable extends Migration
         Schema::create('pruebos', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->is_string();
         });
     }
 
