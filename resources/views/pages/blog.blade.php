@@ -43,7 +43,28 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                Start creating your amazing application!
+                                @foreach ($blog as $key => $value)
+
+                                    <table class="table table-dark table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">ID</th>
+                                                <th scope="col">Dominio</th>
+                                                <th scope="col">Titulo</th>
+                                                <th scope="col">Descripcion</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">{{ $value['id'] }}</th>
+                                                <td>{{ $value['dominio'] }}</td>
+                                                <td>{{ $value['titulo'] }}</td>
+                                                <td>{{ $value['descripcion'] }}</td>
+                                            </tr>
+                                        
+                                        </tbody>
+                                    </table>
+                                @endforeach
                             </div>
                             <!-- /.card-body -->
                             <div class="card-footer">
@@ -56,6 +77,7 @@
                 </div>
             </div>
         </section>
+
         <!-- /.content -->
     </div>
 @endsection

@@ -2,18 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class BlogsController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+   
+    public function getBlog()
     {
-        //
+        $blog = Blog::all(); //Trae todas la info de la tabla blog que esta en la BD
+        return view("pages.blog", array("blog"=>$blog));// Esto retorna un array con acualizacion especifica de la BD
+                                                        // y lo presenta en la vista 
+                                                        //en este caso en la pagina de blogs
+
+
     }
 
     /**

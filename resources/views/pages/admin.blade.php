@@ -43,7 +43,10 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                Start creating your amazing application!
+                                @foreach ( $admin as $key => $values)
+                                    {{ $values }}
+                                @endforeach
+                                Falta Categorias, Articulos y los demas...
                             </div>
                             <!-- /.card-body -->
                             <div class="card-footer">

@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Blog extends Model
 {
-    use HasFactory;
+   protected $table = 'blogs';//Esto es igual a lo que esta en la tabla blog
+
 }
