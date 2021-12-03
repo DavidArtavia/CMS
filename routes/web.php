@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('plantilla');
+Route::get('/', function () { //Con esta funcion declaro que mi index es plantilla
+    return view('index');
 });
+
+Route::view('/','pages.blog');
+Route::view('/admin','pages.admin');
+Route::view('/categories','pages.categories');
+Route::view('/articles','pages.articles');
+Route::view('/opinions','pages.opinions');
+Route::view('/banner','pages.banner');
+Route::view('/ads','pages.ads');
 
 
 Auth::routes();

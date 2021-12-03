@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MY Blog | CMS</title>
 
-<!--=====================================
+    <!--=====================================
  PLUGINS DE CSS
  ======================================-->
 
@@ -79,8 +79,8 @@
         <!-- Main Sidebar Container Barra de contenido -->
         @include('modules.sidebar')
 
-        <!-- Inicio o biginning la pagina  -->
-        @include('pages.beginning')
+        <!-- Contenido dinamio   -->
+        @yield('content')
 
         <!-- pie de pagina o footer -->
         @include('modules.footer')

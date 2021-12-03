@@ -50,7 +50,7 @@
                                  Botón Administradores
                             ======================================-->
                             <li class="nav-item">
-                                <a href="{{ url('#') }}" class="nav-link">
+                                <a href="{{ url('admin') }}" class="nav-link">
                                     <i class="nav-icon fas fa-users-cog"></i>
                                     <p>Administradores</p>
                                 </a>
@@ -61,7 +61,7 @@
                              ======================================-->
 
                             <li class="nav-item">
-                                <a href="{{ url('/categorias') }}" class="nav-link">
+                                <a href="{{ url('/categories') }}" class="nav-link">
                                     <i class="nav-icon fas fa-list-ul"></i>
                                     <p>Categorías</p>
                                 </a>
@@ -72,7 +72,7 @@
                              ======================================-->
 
                             <li class="nav-item">
-                                <a href="{{ url('/articulos') }}" class="nav-link">
+                                <a href="{{ url('/articles') }}" class="nav-link">
                                     <i class="nav-icon fas fa-sticky-note"></i>
                                     <p>Artículos</p>
                                 </a>
@@ -83,7 +83,7 @@
                              ======================================-->
 
                             <li class="nav-item">
-                                <a href="{{ url('/opiniones') }}" class="nav-link">
+                                <a href="{{ url('/opinions') }}" class="nav-link">
                                     <i class="nav-icon fas fa-user-check"></i>
                                     <p>Opiniones</p>
                                 </a>
@@ -105,7 +105,7 @@
                              ======================================-->
 
                             <li class="nav-item">
-                                <a href="{{ url('/anuncios') }}" class="nav-link">
+                                <a href="{{ url('/ads') }}" class="nav-link">
                                     <i class="nav-icon fas fa-bullhorn"></i>
                                     <p>Anuncios</p>
                                 </a>
